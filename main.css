@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.line{
+    border-bottom: 2px solid #ffc800;
+}
+.home-section{
+    background: linear-gradient(110deg, white 68% , #ffc800 32%) ;
+}   
+
+@media screen and (min-width:1024px){
+    .home-section{
+        height: 100vh;
+    }
+    
+}
+/* inicio navbar */
+#logo{
+    font-size: 30px;
+    margin-left: 30px;
+    color: black;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+}
+
+#logo img {
+    margin-top: 10px;
+}
+
+#logo span {
+     color: #ffc800;
+}
+
+.nav-item{
+    margin-left: 30px;
+}
+.nav-item .nav-link{
+    color: black;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+
+#firt-child{
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+}
+.nav-item .nav-link:hover{
+    color: #ffc800;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* fin navbar */ 
+
+/* inicio home content */
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn-warning{
+ font-weight: 700;
+}
+
+.home-title{
+    font-size: 5rem;
+    font-weight: bold;
+
+}
+.home-title span{
+    color: #ffc800;
+    text-shadow: 2px 2px 2px black;
+
+}
+.home-description{
+    font-size: 18px;
+}
+.btn-warning:hover{
+    transition: all 0.4s ease-in-out;
+    box-shadow: 2px 2px 2px black;
+}
+
+.img img{
+    display: block;
+    width: 100%;
+    animation: c 5s linear infinite;
+}
+
+
+@keyframes c{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+}
+
+
+/* fin home content */
+
+/* ofers */
+.card-ofers{
+    text-align: center; 
+}
+.card-ofers img{
+    width: 100px;
+}
+.ofers__text{
+    font-weight: 700;
+}
+.title__ofers{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: 1px 1px 1px black;
+}
+/* //ofers */
+/* cards */
+
+.card-title,
+.card-description{
+    color: #ffc800; 
+    font-weight: 700;
+}
+
+.card-title{
+    font-size: 27px;
+}
+
+.card-description{
+    font-size: 18px;
+}
+.order-now{
+    border: 2px solid #ffc800;
+    color: #ffc800;
+    font-weight: 700;
+    padding: 5px 20px;
+    text-shadow: 1px 1px 1px black;
+    transition: all 0.4s ease-in-out;
+}
+.order-now:hover{
+    background-color: #ffc800;
+    color: white;
+    text-shadow: 0px 0px 0px transparent;
+}
+.card{
+    background-color: white;
+    transition: all 0.4s ease-in-out;
+}
+/* .card:hover{
+    background-color: #ffc800;
+} */
+.card img{
+    width: 100%;
+    height: auto;
+}
+.card__title-burger{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0;
+}
+
+.card__price{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.order__now-burger{
+    border: 2px solid #ffc800;
+    color: #ffc800;
+    font-weight: 700;
+    padding: 5px 20px;
+    text-shadow: 1px 1px 1px black;
+    transition: all 0.4s ease-in-out;
+}
+.order__now-burger:hover{
+    background-color: #ffc800;
+    color: white;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+
+/* others products */
+.bg__other__product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 60vh;
+    color: #ffc800;
+    background: linear-gradient( rgba(0, 0, 0, 0.7) 0%, rgba(0,0,0,0.7) 100%), url(./images/banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+   
+}
+
+.bg__other__product h3{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.bg__other__product p{
+    font-size: 18px;
+}
+
+.topcard{
+    width: 100%;
+    display: block;
+}
+
+.card-pizza{
+    transition: all 0.4s ease-in-out;
+    transform: translateY(0px);
+}
+
+.card-pizza:hover{
+    transform: translateY(-10px);
+}
+
+
+.about_img{
+    width: 100%;
+    display: block;
+}
+
+.line__contact{
+    margin-top: 30px;
+    border: 2px solid #ffc800;
+}
+
+.input__contact{
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    background-color: #ffc800;
+    border: none;
+    border-radius: 5px;
+}
+
+.input__contact::placeholder{
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.btnmessage{
+    width: 100%;
+    background: transparent;
+    border: 2px solid #ffc800;
+    letter-spacing: 3px;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+}
+
+.btnmessage:hover{
+    background-color: #ffc800;
+    color: white;
+}
+
+.info__text{
+    font-size: 1.5rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+.footer__top{
+    background: linear-gradient(110deg, black 67%, #ffc800 32%);
+} 
+
+.logo__footer{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: all 0.4s ease-in-out;
+}
+
+.logo__footer:hover{
+    color: #ffc800;
+}
+
+.footer_img{
+    width: 30px;
+}
+
+.logo__footer span{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 5px;
+}
+
+.text__footer{
+    font-weight: 700;
+
+}
+.text__footer a{
+    cursor: pointer;
+    color: white !important;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+}
+
+.text__footer a:hover{
+    text-shadow: 1px 1px 1px black;
+}
+
+.navbar-nav__footer{
+    list-style: none;
+    padding: 0;
+}
+
+.nav-item__footer{
+    padding: 5px 0;
+}
+
+.nav-link__footer{
+   text-decoration: none;
+   color: white;
+   font-weight: 700;
+   transition: all 0.4s ease-in-out;
+}
+
+.nav-link__footer:hover{
+    color: #ffc800;
+}
+.Social__Links{
+    padding-left: 30px;
+}
+.Social__Links__title,
+.Our__Services__title,
+.Useful__Links__title{
+    font-size: 16px;
+}
+
+.Social__Links__title,
+.Social__Links__text{
+    text-shadow: 1px 1px 1px black;
+}
+.Social__Links_text,
+.Our__Services__text,
+.Social__Links__text,
+.footer__contact__text{
+    font-weight: 700;
+}
+
+.logo__link__footer {   
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    text-shadow: 1px 1px 1px black;
+    transition: all 0.4s ease-in-out;
+}
+.logo__link__footer:hover{
+    color: black;
+}
+
+
+.arrow{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    text-decoration: none;
+    align-items: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #000000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow i{
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+/* media queries */
+@media screen and (min-width:768px){
+   
+    .card-img{
+        height: 200px;
+        object-fit: cover;
+    }
+    .reverse{
+        display: flex;
+
+        flex-direction: row-reverse;
+    }
+}
